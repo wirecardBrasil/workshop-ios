@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="Aula1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-FW-70R">
+                                <rect key="frame" x="170" y="199" width="261" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="DZk-Pr-vBu"/>
+                                    <constraint firstAttribute="width" constant="261" id="VSl-Xg-Dku"/>
+                                    <constraint firstAttribute="height" constant="30" id="VxU-uN-98G"/>
+                                    <constraint firstAttribute="height" constant="30" id="Y9K-V2-Qre"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DZk-Pr-vBu"/>
+                                        <exclude reference="VxU-uN-98G"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-eW-IYs">
+                                <rect key="frame" x="170" y="254" width="261" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="76Y-kv-bA0"/>
+                                    <constraint firstAttribute="height" constant="30" id="yPz-iP-BM2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq0-q1-0Ib">
+                                <rect key="frame" x="312" y="319" width="119" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="5iw-c8-2wi"/>
+                                    <constraint firstAttribute="height" constant="38" id="DjX-A3-y3m"/>
+                                    <constraint firstAttribute="height" constant="38" id="QvG-go-LBW"/>
+                                    <constraint firstAttribute="height" constant="38" id="Yiu-xO-Ikb"/>
+                                    <constraint firstAttribute="width" constant="119" id="md5-Zr-fDu"/>
+                                    <constraint firstAttribute="width" constant="119" id="oSA-2L-sG2"/>
+                                    <constraint firstAttribute="width" constant="119" id="rCn-YJ-P2R"/>
+                                    <constraint firstAttribute="width" constant="119" id="uCp-O0-BzB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Conectar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5iw-c8-2wi"/>
+                                        <exclude reference="DjX-A3-y3m"/>
+                                        <exclude reference="QvG-go-LBW"/>
+                                        <exclude reference="Yiu-xO-Ikb"/>
+                                        <exclude reference="md5-Zr-fDu"/>
+                                        <exclude reference="oSA-2L-sG2"/>
+                                        <exclude reference="rCn-YJ-P2R"/>
+                                        <exclude reference="uCp-O0-BzB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="btnLoginTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bIC-RL-Ess"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qq0-q1-0Ib" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="312" id="4Rq-MJ-0kr"/>
+                            <constraint firstItem="bUw-FW-70R" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="179" id="4ec-iz-j68"/>
+                            <constraint firstItem="Aeb-eW-IYs" firstAttribute="top" secondItem="bUw-FW-70R" secondAttribute="bottom" constant="25" id="4iR-Hj-SwU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qq0-q1-0Ib" secondAttribute="trailing" constant="153" id="77K-Q7-OUh"/>
+                            <constraint firstItem="qq0-q1-0Ib" firstAttribute="top" secondItem="Aeb-eW-IYs" secondAttribute="bottom" constant="35" id="7Gg-qu-85b"/>
+                            <constraint firstAttribute="trailing" secondItem="qq0-q1-0Ib" secondAttribute="trailing" constant="169" id="Ggq-5N-M8R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qq0-q1-0Ib" secondAttribute="trailing" constant="153" id="MD5-Mp-qpX"/>
+                            <constraint firstAttribute="centerX" secondItem="bUw-FW-70R" secondAttribute="centerX" id="SXZ-q9-AdA"/>
+                            <constraint firstAttribute="centerX" secondItem="bUw-FW-70R" secondAttribute="centerX" id="UNX-iA-niB"/>
+                            <constraint firstItem="qq0-q1-0Ib" firstAttribute="top" secondItem="Aeb-eW-IYs" secondAttribute="bottom" constant="35" id="eg0-ZH-mJR"/>
+                            <constraint firstAttribute="centerX" secondItem="Aeb-eW-IYs" secondAttribute="centerX" id="lqs-XQ-qhN"/>
+                            <constraint firstItem="qq0-q1-0Ib" firstAttribute="top" secondItem="Aeb-eW-IYs" secondAttribute="bottom" constant="35" id="nZW-Qm-nAO"/>
+                            <constraint firstItem="bUw-FW-70R" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="179" id="nbE-Ut-jIw"/>
+                            <constraint firstItem="qq0-q1-0Ib" firstAttribute="top" secondItem="Aeb-eW-IYs" secondAttribute="bottom" constant="35" id="nxn-IW-fao"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SXZ-q9-AdA"/>
+                                <exclude reference="nbE-Ut-jIw"/>
+                                <exclude reference="4Rq-MJ-0kr"/>
+                                <exclude reference="77K-Q7-OUh"/>
+                                <exclude reference="7Gg-qu-85b"/>
+                                <exclude reference="Ggq-5N-M8R"/>
+                                <exclude reference="MD5-Mp-qpX"/>
+                                <exclude reference="eg0-ZH-mJR"/>
+                                <exclude reference="nZW-Qm-nAO"/>
+                                <exclude reference="nxn-IW-fao"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="Aeb-eW-IYs" id="qRZ-Sf-8NH"/>
+                        <outlet property="txtUsername" destination="bUw-FW-70R" id="dzs-jZ-3R3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="323"/>
+        </scene>
+    </scenes>
+</document>
